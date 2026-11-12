@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio digital sobre Engenharia Agronômica para a Feira de Profissões." />
+  <title>Feira de Profissões | Engenharia Agronômica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CABEÇALHO E NAVEGAÇÃO -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#topo" class="brand" aria-label="Voltar ao início">
+        <span class="brand-badge">🌱</span>
+        <div>
+          <strong>AGRONOMIA</strong>
+          <small>Feira de Profissões</small>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Menu principal">
+        <ul>
+          <li><a href="#apresentacao">A Profissão</a></li>
+          <li><a href="#historia">Fatos Históricos</a></li>
+          <li><a href="#mercado">Panorama & Mercado</a></li>
+          <li><a href="#stand">Nosso Stand</a></li>
+          <li><a href="#creditos">Créditos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- BANNER PRINCIPAL (HERO) -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="pill-tag">Projeto Interdisciplinar • Portfólio Oficial</span>
+          <h1 id="hero-title">Engenharia Agronômica</h1>
+          <p class="slogan">“Cultivando ciência no campo para alimentar o futuro do planeta.”</p>
+          <p class="hero-desc">
+            Explore como o Engenheiro Agrônomo une biologia, tecnologia de ponta e sustentabilidade para transformar o solo, proteger ecossistemas e garantir a segurança alimentar mundial.
+          </p>
+          <div class="hero-actions">
+            <a href="#apresentacao" class="btn btn-primary">Conhecer a Carreira</a>
+            <a href="#stand" class="btn btn-outline">Ver Projeto do Stand</a>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=900&q=75"
+            alt="Engenheiro agrônomo analisando plantação verde ao amanhecer"
+            loading="eager"
+          />
+          <figcaption>Gestão sustentável do solo e agricultura de precisão.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 1. APRESENTAÇÃO DA PROFISSÃO -->
+    <section id="apresentacao" class="section section-white" aria-labelledby="titulo-apresentacao">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker">01 • Identidade Profissional</span>
+          <h2 id="titulo-apresentacao">O que faz o Engenheiro Agrônomo?</h2>
+          <p>Muito além do plantio: uma carreira estratégica que conecta ciência, gestão ambiental e inovação.</p>
+        </header>
+
+        <div class="intro-grid">
+          <article class="card-terra">
+            <h3>Rotina & Atribuições</h3>
+            <p>
+              O cotidiano do agrônomo divide-se entre o <strong>campo, o laboratório e o escritório de gestão</strong>. Ele planeja safras, realiza análises químicas e físicas do solo, prescreve o manejo integrado de pragas (MIP), projeta sistemas de irrigação inteligente e acompanha toda a cadeia produtiva — da semente à agroindústria.
+            </p>
+            <ul class="check-list">
+              <li>Diagnóstico e recuperação de solos degradados;</li>
+              <li>Melhoramento genético de sementes e mudas;</li>
+              <li>Operação de drones, sensores e mapas de produtividade;</li>
+              <li>Consultoria financeira, logística e certificação ambiental.</li>
+            </ul>
+          </article>
+
+          <article class="card-verde">
+            <h3>Importância para a Sociedade</h3>
+            <p>
+              Com a população global ultrapassando 8 bilhões de pessoas, produzir alimentos sem destruir florestas é um dos maiores desafios da humanidade. O engenheiro agrônomo é o profissional responsável por <strong>aumentar a produtividade na mesma área plantada</strong>.
+            </p>
+            <div class="impact-box">
+              <strong>3 Pilares de Impacto:</strong>
+              <p>1. <strong>Segurança Alimentar:</strong> alimentos saudáveis e acessíveis na mesa da população.</p>
+              <p>2. <strong>Sustentabilidade:</strong> bioinsumos, controle biológico e preservação de nascentes.</p>
+              <p>3. <strong>Economia:</strong> o agronegócio representa cerca de 24% do PIB brasileiro.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ÁREAS DE ATUAÇÃO INTERATIVAS -->
+        <div class="areas-wrapper">
+          <h3 class="sub-heading">Principais Áreas de Atuação (Clique para explorar)</h3>
+          <div class="tabs-buttons" role="tablist" aria-label="Áreas da Agronomia">
+            <button class="tab-btn active" data-tab="precisao" role="tab" aria-selected="true">🛰️ Agricultura 4.0</button>
+            <button class="tab-btn" data-tab="solos" role="tab" aria-selected="false">🌱 Manejo de Solos</button>
+            <button class="tab-btn" data-tab="zootecnia" role="tab" aria-selected="false">🐄 Produção Animal</button>
+            <button class="tab-btn" data-tab="ambiental" role="tab" aria-selected="false">🌳 Gestão Ambiental</button>
+          </div>
+
+          <article class="tab-panel" id="tabPanel">
+            <h4>🛰️ Agricultura Digital e de Precisão</h4>
+            <p>
+              Uso de imagens de satélite, drones multiespectrais, GPS agrícola e Inteligência Artificial para aplicar água e fertilizantes exatamente onde a planta precisa, reduzindo custos e impactos ambientais.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FATOS HISTÓRICOS -->
+    <section id="historia" class="section section-sand" aria-labelledby="titulo-historia">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker">02 • Integração com História</span>
+          <h2 id="titulo-historia">Origem e Evolução Histórica</h2>
+          <p>Da domesticação das primeiras sementes na Antiguidade à revolução biotecnológica atual.</p>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-year">10.000 a.C.</div>
+            <div class="timeline-card">
+              <h3>Revolução Neolítica</h3>
+              <p>
+                Surgimento da agricultura no Crescente Fértil (Mesopotâmia e Egito). Os povos nômades tornam-se sedentários ao dominar o cultivo de trigo, cevada e a irrigação pelos ciclos dos rios Tigre, Eufrates e Nilo.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">Séc. XVIII – XIX</div>
+            <div class="timeline-card">
+              <h3>Ciência Agrícola & Primeiras Escolas</h3>
+              <p>
+                Com Justus von Liebig (Lei do Mínimo na química do solo) e a Revolução Industrial, a agricultura ganha base científica. No Brasil, nasce em <strong>1877</strong> a Imperial Escola Agrícola da Bahia, primeira instituição de ensino agronômico do país.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">12 Out 1933</div>
+            <div class="timeline-card">
+              <h3>Regulamentação no Brasil</h3>
+              <p>
+                O Decreto nº 23.196 regulamenta oficialmente a profissão de Engenheiro Agrônomo no Brasil — data até hoje celebrada como o <strong>Dia do Engenheiro Agrônomo</strong>.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">1960 – 1980</div>
+            <div class="timeline-card">
+              <h3>Revolução Verde e Criação da Embrapa</h3>
+              <p>
+                Mecanização pesada, melhoramento genético e correção dos solos ácidos do Cerrado brasileiro (fundação da Embrapa em 1973), transformando o Brasil de importador em potência mundial de alimentos.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">Atualidade</div>
+            <div class="timeline-card">
+              <h3>Agricultura Regenerativa & Biotecnologia</h3>
+              <p>
+                Foco em bioinsumos, edição genética (CRISPR), fixação biológica de nitrogênio, agricultura de baixo carbono e conectividade no campo.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PANORAMA ATUAL E MERCADO -->
+    <section id="mercado" class="section section-white" aria-labelledby="titulo-mercado">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker">03 • Matemática, Geografia & Atualidades</span>
+          <h2 id="titulo-mercado">Panorama Atual e Mercado de Trabalho</h2>
+          <p>Indicadores de remuneração, distribuição regional e perspectivas para os próximos anos.</p>
+        </header>
+
+        <!-- CARDS ESTATÍSTICOS -->
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-icon">💰</span>
+            <h3>R$ 8.950,00</h3>
+            <p class="stat-label">Média Salarial Nacional</p>
+            <small>Piso legal de 6 a 8,5 salários mínimos (Lei 4.950-A), podendo ultrapassar R$ 18 mil em cargos de gerência.</small>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-icon">📈</span>
+            <h3>+14,2%</h3>
+            <p class="stat-label">Crescimento de Vagas</p>
+            <small>Alta demanda impulsionada pela transição verde, crédito de carbono e agricultura digital.</small>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-icon">🎓</span>
+            <h3>5 Anos</h3>
+            <p class="stat-label">Bacharelado (10 semestres)</p>
+            <small>Registro profissional obrigatório no sistema <strong>CREA / CONFEA</strong> após a graduação.</small>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-icon">🌎</span>
+            <h3>Top 3 Mundial</h3>
+            <p class="stat-label">Protagonismo Brasileiro</p>
+            <small>O Brasil alimenta cerca de 1 bilhão de pessoas no mundo com tecnologia tropical própria.</small>
+          </article>
+        </div>
+
+        <!-- GRÁFICO DE EMPREGABILIDADE POR SETOR -->
+        <div class="chart-container">
+          <div class="chart-header">
+            <h3>Distribuição de Empregabilidade por Setor (%)</h3>
+            <p>Onde trabalham os engenheiros agrônomos formados no Brasil (Dados consolidados CREA/CAGED):</p>
+          </div>
+
+          <div class="bar-chart" id="barChart">
+            <div class="bar-row">
+              <span class="bar-title">Produção Agrícola & Fazendas</span>
+              <div class="bar-track">
+                <div class="bar-fill" style="width: 34%;" data-value="34%">34%</div>
+              </div>
+            </div>
+
+            <div class="bar-row">
+              <span class="bar-title">Consultoria, Assistência Técnica & Projetos</span>
+              <div class="bar-track">
+                <div class="bar-fill bar-brown" style="width: 26%;" data-value="26%">26%</div>
+              </div>
+            </div>
+
+            <div class="bar-row">
+              <span class="bar-title">Indústria de Insumos, Sementes & Biotecnologia</span>
+              <div class="bar-track">
+                <div class="bar-fill" style="width: 21%;" data-value="21%">21%</div>
+              </div>
+            </div>
+
+            <div class="bar-row">
+              <span class="bar-title">Órgãos Públicos, Pesquisa (Embrapa) & Ensino</span>
+              <div class="bar-track">
+                <div class="bar-fill bar-brown" style="width: 11%;" data-value="11%">11%</div>
+              </div>
+            </div>
+
+            <div class="bar-row">
+              <span class="bar-title">Startups AgroTech & Perícia Ambiental</span>
+              <div class="bar-track">
+                <div class="bar-fill" style="width: 8%;" data-value="8%">8%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. APRESENTAÇÃO DO STAND (FEIRA DE PROFISSÕES) -->
+    <section id="stand" class="section section-green-tint" aria-labelledby="titulo-stand">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker">04 • Registro Oficial do Evento</span>
+          <h2 id="titulo-stand">Nosso Stand na Feira de Profissões</h2>
+          <p>Evidências práticas, protótipos apresentados e relato da nossa experiência com os visitantes.</p>
+        </header>
+
+        <!-- EVIDÊNCIAS DO MATERIAL EXPOSTO -->
+        <div class="stand-grid">
+          <article class="evidence-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=75"
+                alt="Amostras de diferentes tipos de solo e sementes expostas na bancada"
+                loading="lazy"
+                class="zoomable-img"
+              />
+            </figure>
+            <div class="evidence-body">
+              <span class="badge-mini">Maquete & Bancada</span>
+              <h3>Perfil de Solos & Sementes</h3>
+              <p>
+                Exposição comparativa entre solo arenoso, argiloso e humífero em cilindros transparentes, demonstrando a retenção de água e a importância da cobertura vegetal contra erosão.
+              </p>
+            </div>
+          </article>
+
+          <article class="evidence-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=75"
+                alt="Sensor de umidade do solo conectado a placa eletrônica de protótipo"
+                loading="lazy"
+                class="zoomable-img"
+              />
+            </figure>
+            <div class="evidence-body">
+              <span class="badge-mini">Protótipo Interativo</span>
+              <h3>Irrigação Inteligente com Sensor</h3>
+              <p>
+                Protótipo funcional desenvolvido com sensor de umidade de solo: os visitantes puderam testar na prática quando o sistema aciona ou desliga a irrigação automaticamente.
+              </p>
+            </div>
+          </article>
+
+          <article class="evidence-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=75"
+                alt="Mudas cultivadas em laboratório e apresentação para estudantes na feira"
+                loading="lazy"
+                class="zoomable-img"
+              />
+            </figure>
+            <div class="evidence-body">
+              <span class="badge-mini">Registro Fotográfico</span>
+              <h3>Interação com o Público</h3>
+              <p>
+                Apresentação dos painéis infográficos, distribuição de mudas nativas/temperos aos visitantes e quiz rápido sobre curiosidades do agronegócio brasileiro.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- RELATO DA EXPERIÊNCIA -->
+        <article class="experience-box">
+          <div class="exp-header">
+            <span class="exp-icon">📝</span>
+            <div>
+              <h3>Relato da Experiência de Apresentação</h3>
+              <small>Diário de Bordo • Equipe de Engenharia Agronômica</small>
+            </div>
+          </div>
+          <p>
+            “Apresentar a Engenharia Agronômica na Feira de Profissões transformou a forma como enxergamos o campo. Muitos colegas e familiares associavam o agrônomo apenas ao trabalho braçal na lavoura, e ficaram surpreendidos ao conhecer o uso de drones, biotecnologia, análises químicas de solo e o peso econômico da profissão no Brasil. O experimento com os perfis de solo e o sensor de umidade gerou grande engajamento no stand, permitindo explicar na prática como a ciência evita o desperdício de água e preserva o meio ambiente.”
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5. RODAPÉ / CRÉDITOS -->
+  <footer id="creditos" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">🌱 Engenharia Agronômica</div>
+        <p class="footer-about">
+          Portfólio digital interdisciplinar desenvolvido como registro oficial de pesquisa e apresentação para a Feira de Profissões.
+        </p>
+      </div>
+
+      <div class="footer-info">
+        <h4>Identificação do Projeto</h4>
+        <ul>
+          <li><strong>Estudante:</strong> [Seu Nome Completo Aqui]</li>
+          <li><strong>Turma / Série:</strong> [Sua Turma • Ex: 2º Ano B - Ensino Médio]</li>
+          <li><strong>Disciplinas Integradas:</strong> Biologia, História, Geografia, Matemática e Tecnologia</li>
+          <li><strong>Orientação:</strong> Prof. [Nome do Professor(a)]</li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Links & Referências</h4>
+        <ul>
+          <li><a href="#topo">↑ Voltar ao topo da página</a></li>
+          <li><a href="https://www.confea.org.br" target="_blank" rel="noopener noreferrer">CONFEA / CREA Oficial</a></li>
+          <li><a href="https://www.embrapa.br" target="_blank" rel="noopener noreferrer">Portal Embrapa Pesquisa</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 • Projeto Feira de Profissões — Desenvolvido com HTML5 Semântico, CSS3 e JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL PARA AMPLIAR IMAGENS DO STAND -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar imagem">✕</button>
+    <img id="lightboxImg" src="" alt="" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
